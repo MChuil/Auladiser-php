@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>Tablas</title>
+    </head>
+    <body>
+        <h3>Tablas</h3>
+        <p>
+            Las tablas en un conjunto de filas y columnas las cuales forman celdas. Dentro de las celdas va la información.
+        </p>
+
+        <table>
+            <tr> <!-- tr es para crear una fila-->
+                <td><!-- columna que forma la celda-->
+                    Nombre
+                </td>
+                <td>
+                    Apellidos
+                </td>
+                <td>Edad</td>
+            </tr>
+            <tr> <!-- segunda fila-->
+                <td>
+                    Miguel
+                </td>
+                <td>
+                    Chuil
+                </td>
+                <td>
+                    20
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Maria
+                </td>
+                <td>
+                   Lopez 
+                </td>
+                <td>
+                    25
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" width="100%">
+            <thead><!--cabecera de la tabla-->
+                <tr>
+                    <th colspan="4">Listado de clientes</th>
+                </tr>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Telefono</th>
+                    <th>Ciudad</th>
+                </tr>
+            </thead>
+
+            <tbody> <!-- contenido o cuerpo de la tabla-->
+                <tr>
+                    <td>Juan</td>
+                    <td>juan@gmail.com</td>
+                    <td>1234567890</td>
+                    <td>Queretaro</td>
+                </tr>
+                <tr>
+                    <td>Luis</td>
+                    <td>luis@gmail.com</td>
+                    <td>1234567890</td>
+                    <td>Queretaro</td>
+                </tr>
+                <tr>
+                    <td>Marcos</td>
+                    <td>marcos@gmail.com</td>
+                    <td>1234567890</td>
+                    <td>Queretaro</td>
+                </tr>
+                <tr>
+                    <td>Laura</td>
+                    <td>laura@gmail.com</td>
+                    <td>1234567890</td>
+                    <td>Queretaro</td>
+                </tr>
+            </tbody>
+
+            <tfoot><!-- pie de la tabla-->
+                <tr>
+                    <td>Total</td>
+                    <td>de</td>
+                    <td>Clientes</td>
+                    <td>4</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br><br><br>
+
+        <table border="1" width="100%">
+            <tbody>
+                <tr>
+                    <th rowspan="4">Mi horario</th>
+                    <td>Lunes</td>
+                    <td>Martes</td>
+                    <td>Miercoles</td>
+                    <td>Jueves</td>
+                    <td>Viernes</td>
+                </tr>
+                <tr>
+                    <td>07:00 am. Daily</td>
+                    <td>07:00 am. Daily</td>
+                    <td>07:00 am. Daily</td>
+                    <td>07:00 am. Daily</td>
+                    <td>07:00 am. Daily</td>
+                </tr>
+                <tr>
+                    <td>08:00 am. Desayuno</td>
+                    <td>08:00 am. Desayuno</td>
+                    <td>08:00 am. Desayuno</td>
+                    <td>08:00 am. Desayuno</td>
+                    <td>08:00 am. Desayuno</td>
+                </tr>
+                <tr>
+                    <td>09:00 am. Programar App</td>
+                    <td>09:00 am. Programar App</td>
+                    <td>09:00 am. Programar App</td>
+                    <td>09:00 am. Programar App</td>
+                    <td>09:00 am. Programar App</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

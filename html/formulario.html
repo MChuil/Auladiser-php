@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Formularios</title>
+    </head>
+    <body>
+        <h1>Formularios</h1>
+        <!-- 
+            input (etiqueta)
+            atributos:
+                    type            - indica el tipo de información que se podra recibir
+                    name            - sirve como identificador de ese input para el backend
+                    placeholder     - muestra un mensaje informativo temporal
+                    required        - indica si el dato es obligatorio o no, por defecto no es obligatorio
+        -->
+        <p>Favor de llenar el siguiente formulario
+            <small>(* campos obligatorios)</small>
+        </p>
+        <form>
+
+            <p>
+                <label>Introduce tu nombre *</label> <br>
+                <input type="text" name="nombre" placeholder="Nombre completo" required />
+            </p>
+
+            <p>
+                <label>Introduce tu correo electronico *</label> <br>
+                <input type="email" name="correo" placeholder="Correo electronico valido" required>
+            </p>
+
+            <p>
+                <label for="telefono">Telefono</label> <br>
+                <input type="number" name="telefono" placeholder="Ingresa tu telefono">
+            </p>
+
+            <p>
+                <label for="birthday">Fecha de nacimiento</label> <br>
+                <input type="date" name="birthday">
+            </p>
+
+            <p>
+                <label for="sexo">Selecciona tu sexo</label> <br>
+                <select name="sexo">
+                    <option value="F">Femenino</option>
+                    <option value="M">Masculino</option>
+                    <option value="NB">No-Binarie</option>
+                    <option value="GF">Genero fluido</option>
+                </select>
+            </p>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>

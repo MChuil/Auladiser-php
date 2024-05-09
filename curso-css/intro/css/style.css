@@ -1,0 +1,72 @@
+/*
+    Introducción a CSS3
+*/
+body{
+    background-color: silver; /* color de fondo */
+}
+
+h1{
+    color: indigo; /* indico el color de la letra */
+    text-align: center; /* text-align es para alinear texto */
+}
+
+small{
+    font-weight:bold; /* font-weight es para el grosor de la letra */
+}
+
+/*
+    Cuando se aplica regla CSS a los ID se usa la sintaxis:
+
+    #nombredelid{
+        propiedad: valor;
+    }
+*/
+
+#inicio{
+    color: blue;
+}
+
+#texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*
+    Cuando se aplica regla CSS a las clases se usa la sintaxis:
+
+    .nombredelaclase{
+        propiedad: valor;
+    }
+*/
+
+.font{
+    font-family: 'Trebuchet MS';
+    font-size: 24px; /* tamaño de fuente en pixeles */
+    
+}
+
+/*
+    font-family     tipo de fuente
+    font-size       tamaño de fuente
+    font-weight     grosor de la fuente
+    color           color de la fuente
+    text-align      alineación de fuente (center, left, right, justify)
+
+    background-color    color de fondo
+    backgound-image     imagen de fondo
+
+    margin-top
+    margin-bottom       Margenes hacia los cuatro lados,se mide en pixeles o porcentaje
+    margin-left
+    margin-right
+
+    border-style    tipo de linea del borde
+    border-color    color de la linea
+    border-width    ancho de la linea
+
+    width       para indicar el ancho de un elemento, se mide en pixeles o porcentaje
+                ejemplo
+                    width: 1200px;
+    height       para indicar el alto de un elemento, se mide en pixeles o porcentaje
+                ejemplo
+                    height: 1200px;
+*/

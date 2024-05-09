@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        body{
+            background-color: silver; /* color de fondo */
+        }
+
+        h1{
+            color: indigo; /* indico el color de la letra */
+            text-align: center; /* text-align es para alinear texto */
+        }
+        
+        small{
+            font-weight:bold; /* font-weight es para el grosor de la letra */
+        }
+
+        #inicio{
+            color: blue;
+        }
+        
+        #texto{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .font{
+            font-family: 'Trebuchet MS';
+            font-size: 24px; /* tamaño de fuente en pixeles */
+            
+        }
+
+        #box{
+            background-color: indigo;
+            width: 940px;
+            height: 100px;
+            color: white;
+            text-align: center;
+        }
+        #rottweiler{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introducción a CSS</h1>
+    <small>
+        Cascade Style Sheets
+    </small>
+    <!-- COMENTARIO -->
+    <p id="inicio" class="font">
+        Existe 3 maneras de agregar css
+        <ol>
+            <li style="color:yellow; border-style:solid; border-color: green;">Directamente a la etiqueta html usando el atributo style</li>
+            <li style="color:yellow; border-style:solid; border-color: green;">Dentro del head del mismo documento (parte superior)</li>
+            <li style="color:yellow; border-style:solid; border-color: green;">En un archivo aparte (.css)</li>
+        </ol>
+    </p>
+    <p class="font">
+        Las reglas css, se caracterizan por ser un par <em>propiedad: valor;</em>
+        <hr>
+        ejemplo: <br>
+        <code>
+            color: #fff;
+        </code>
+    </p>
+    <p class="font">Las reglas css se aplican a las etiquetas html, a los ID y las Clases</p>
+    <p class="font">
+        Sintaxis:
+            etiqueta{
+                propiedad:valor;
+                propiedad:valor;
+                propiedad:valor;
+            }
+    </p>
+
+    <p id="texto" >
+        id: identificador y no debe haber mas de uno igual. <br>
+        El nombre del id no debe llevar espacios en blanco, ni caraceteres especiales. Solo string
+    </p>
+
+    <p class="font">
+        Las clases son formas de agrupar elementos que puedan recibir las mismas reglas css, se utiliza el atributo: class
+    </p>
+
+
+    <div id="box">Todos los derechos reservados</div>
+
+    <img id="rottweiler" src="https://www.forbes.com/advisor/wp-content/uploads/2023/12/Rottweiler.jpg" alt="Rottweiler">
+</body>
+</html>

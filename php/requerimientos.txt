@@ -1,0 +1,15 @@
+1. Navegador
+2. Editor de codigo
+3. PHP
+4. Servidor Apache
+5. MySQL base de datos
+6. Cliente de base de datos
+
+    WAMPP (windows-apache-mysql-php-perl)
+    
+
+    LAMP    Linux
+    MAMP    Mac
+
+
+    XAMPP (x-apache-mysql-php-perl)

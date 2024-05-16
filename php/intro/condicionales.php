@@ -62,5 +62,32 @@
             Si la calificación es 9          'Muy Bien'
             Si la calificación es 10         'Excelente'
     </p>
+
+
+    <?php 
+
+        // Favor de indicar su calificación en un valor NO mayor a 10 
+
+        $calificacion = 20;
+
+        if($calificacion < 6){
+            echo 'Reprobado...';
+        }else if(($calificacion >=6) && ($calificacion < 7)){
+            echo 'Suficiente';
+        }else if($calificacion >=7 && $calificacion < 8){
+            echo 'Satisfactorio';
+        }else if($calificacion >=8 && $calificacion < 9){
+            echo 'Bien';
+        }else if($calificacion >=9 && $calificacion < 10){
+            echo 'Muy Bien';
+        }else if($calificacion == 10){
+            echo 'Excelente';
+        }else{
+            echo 'Valor invalido...';
+        }
+    
+    
+    ?>
+
 </body>
 </html>

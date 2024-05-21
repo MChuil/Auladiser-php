@@ -1,0 +1,4 @@
+Crear un formulario para hacer suma de 2 numeros (html y php)
+Crear un formulario para  restar de 2 numeros
+Crear un formulario para  multiplicar de 2 numeros
+Crear un formulario para  dividir de 2 numeros

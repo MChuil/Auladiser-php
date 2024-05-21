@@ -53,6 +53,14 @@
     echo "<br>";
     echo "<br>";
     echo "<br>";
+    
+    
+    $mensaje = "Este es mi mensaje";
+    
+    echo strtoupper($mensaje); //convierte a mayusculas
+    echo "<br>";
+    echo strtolower($mensaje); //convierte a minusculas
+    echo "<br>";
 
     /**
      *  Funciones personalizadas

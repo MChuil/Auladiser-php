@@ -1,0 +1,41 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 7px;
+}
+form div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin: 10px 0px;
+}
+
+button{
+    background-color: indigo;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.text-danger{
+    color: red;
+    font-weight: 700;
+}

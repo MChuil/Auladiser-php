@@ -1,0 +1,11 @@
+  /**
+     * Sesiones, una forma de  almacenar información en el servidor de forma temporal y que
+     * se pueda compartir entre diferentes páginas.
+     * 
+     * Para usar sesiones es necesario iniciarlas con session_start() al inicio del script.
+     * 
+     * Para crear una variable de sesión se usa $_SESSION['nombre'] = valor;
+     * 
+     * Para leer una variable de sesión se usa $_SESSION['nombre'];
+     */
+    session_st

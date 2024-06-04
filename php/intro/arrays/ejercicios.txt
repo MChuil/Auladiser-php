@@ -20,6 +20,7 @@
 4. Crear la 'secuencia de fibonacci' de 100 numeros
     0,1,1,2,3,5,8,13,21,34,55,89,144,
 
+
 5. Crear una función que reciba como parametro un numero y muestre su 'factorial'
     5
     5 4 3 2 1 = 120

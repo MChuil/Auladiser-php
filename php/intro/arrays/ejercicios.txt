@@ -12,4 +12,20 @@
 3.  Crear un ciclo que recorra del 1 al 20 y almacenar en un array solo los 
     números pares y despues imprimir cada uno de ellos en una linea
 
-    operador de modulo
+    operador de modulo (%), obtiene el residuo de una division
+        4 % 2 = 0
+        3 % 2 = 1
+
+
+4. Crear la 'secuencia de fibonacci' de 100 numeros
+    0,1,1,2,3,5,8,13,21,34,55,89,144,
+
+5. Crear una función que reciba como parametro un numero y muestre su 'factorial'
+    5
+    5 4 3 2 1 = 120
+
+    3
+    3 2 1 = 6
+
+    4
+    4 3 2 1 = 24

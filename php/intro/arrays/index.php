@@ -29,6 +29,7 @@
     
     // Crear un array indexado
     $numeros = array(6, 8, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30);
+    $numeros[1]= 999;
     echo $numeros[1];
     echo "<hr>";
     
@@ -50,4 +51,12 @@
     // $multi = [ ['A', 'B', 'C'], [4, 5, 6], ['Juan', 'Luis', 'Pedro'] ];
     echo $multi[2][1];
 
+
+    echo "<hr>";
+    // Crear un array asociativo
+    $persona = array('name' => 'Juan', 'lastname' => 'Pérez', 'age' => 25);
+
+    $persona['name'] = 'Miguel';
+
+    echo $persona['name'] . ' ' . $persona['lastname'];
 ?>

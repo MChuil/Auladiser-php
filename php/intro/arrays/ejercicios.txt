@@ -1,0 +1,15 @@
+1.  Agrega los meses faltantes al siguiente array:
+        $months = ['Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'];
+
+2.  Crear un array asociativo con los siguientes datos:
+        Nombre: Miguel Pérez
+        Dirección. Av. Reforma #4565
+        Telefono: 1234567890
+        Correo: mike@test.com
+        Edad: 28
+        Estado Civil: Soltero
+
+3.  Crear un ciclo que recorra del 1 al 20 y almacenar en un array solo los 
+    números pares y despues imprimir cada uno de ellos en una linea
+
+    operador de modulo

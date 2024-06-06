@@ -13,3 +13,46 @@
 
 
     XAMPP (x-apache-mysql-php-perl)
+
+
+    localhost/phpmyadmin
+
+    C reate
+    R ead
+    U pdate
+    D elete
+
+
+    TODAS las tablas deben llevar un campo identificador
+    
+    Tasks
+    - identificador
+    - nombre del pendiente
+    - prioridad (alta-media-baja)
+    - fecha de creación
+    - estado (pendiente-proceso-finalizado)
+
+
+    Clientes (tabla)
+    - # cliente
+    - nombre (campo)
+    - apellidos (campo)
+    - direccion (campo)
+    - correo    (campo)
+    - telefono  (campo)
+    - rfc       (campo)
+
+
+    Productos
+    - codigo (identificador)
+    - nombre
+    - marca
+    - precio
+    - existencia
+    - presentacion
+
+
+    Alumnos
+    - matricula
+    - nombre
+    - tutor

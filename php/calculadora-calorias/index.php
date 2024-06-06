@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,7 +60,17 @@
             <div class="card">
                 <div class="card-header">Resultados</div>
                 <div class="card-body">
-                    
+                    <?php if(isset($_SESSION['calories'])){?>
+                        <p>Tus calorias calculadas para mantener peso son:</p>
+                        <h1><?php echo $_SESSION['calories'] ?></h1>
+                        <p><strong>Metabolismo basal:</strong></p>
+                        <h3><?php echo $_SESSION['tmb'] ?></h3>
+                        <a href="process.php?action=reset" class="btnReset">Reiniciar</a>
+                    <?php }else if(isset($_SESSION['error'])){ ?>
+                        <h1 class="error"><?php echo $_SESSION['error'] ?></h1>
+                    <?php }else{ ?>
+                        <h1 class="text-center">No hay resultados</h1>
+                    <?php } ?>
                 </div>
             </div>
         </section>

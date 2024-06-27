@@ -1,7 +1,5 @@
 <?php
     require_once 'process.php';
-    $conect = conexion();
-    $response = selectAll($conect);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +29,7 @@
                 }
             ?>
 
-            <form action="insert.php" method="POST">
+            <form action="process.php?action=insert" method="POST">
                 <div class="group">
                     <label for="">Descripción</label>
                     <textarea name="name" id=""></textarea>
@@ -53,6 +51,32 @@
             </p>
             <table>
                 <thead>
+                    <form action="process.php?action=search" method="post">
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="date" name="date">
+                            </td>
+                            <td>
+                                <select name="priority" id="">
+                                    <option value="">Seleccionar</option>
+                                    <option value="Alta">Alta</option>
+                                    <option value="Media">Media</option>
+                                    <option value="Baja">Baja</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="status" id="">
+                                    <option value="">Seleccionar</option>
+                                    <option value="Pendiente">Pendiente</option>
+                                    <option value="Finalizado">Finalizado</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="submit">Buscar</button>
+                            </td>
+                        </tr>
+                    </form>
                     <tr>
                         <th>Pendiente</th>
                         <th>Fecha</th>
@@ -63,7 +87,8 @@
                 </thead>
                 <tbody>
                     <?php 
-                        while($row = mysqli_fetch_array($response)){
+                        $response = $_SESSION['data'];
+                        foreach ($response as $row) {
                             echo "<tr>
                                 <td>" . $row['name'] . "</td>
                                 <td>" . $row['date'] . "</td>
@@ -71,20 +96,11 @@
                                 <td>" . $row['status'] . "</td>
                                 <td>
                                     <small>
-                                        <a href='update.php?id=". $row['id']. "'>Finalizar</a>
-                                        <a href='delete.php?id=". $row['id'] . "'>Eliminar</a>
+                                        <a href='process.php?action=update&id=". $row['id']. "'>Finalizar</a>
+                                        <a href='process.php?action=delete&id=". $row['id'] . "'>Eliminar</a>
                                     </small>
                                 </td>
                             </tr>";
-
-                            //Php 8
-                            // echo "<tr>
-                            //     <td>{$row['name']}</td>
-                            //     <td>{$row['date']}</td>
-                            //     <td>{$row['priority']}</td>
-                            //     <td>{$row['status']}</td>
-                            //     <td></td>
-                            // </tr>";
                         }
                     ?>
                 </tbody>
